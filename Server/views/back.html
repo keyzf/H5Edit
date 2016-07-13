@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>H5 Edit</title>
+    <% if (env == "production") { %>
+        <link rel="stylesheet" type="text/css" href="back/index.css">
+    <% } %>
+</head>
+<body>
+    <div id="app">
+        <router-view ></router-view>
+    </div>
+    <script src="/back/bundle.js"></script>
+    <% if (env !== "production" && reload === true) { %>
+        <script src="/reload/reload.js"></script>
+    <% } %>
+</body>
+</html>
