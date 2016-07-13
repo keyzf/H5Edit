@@ -40,7 +40,7 @@
 			<div class="dialog_bottom">
 				<ul class="dialog_btn">
 					<li @click="hideMaterialLibPic">取消</li>
-					<li @click="ok()">确认</li>
+					<li @click="hideMaterialLibPic">确认</li>
 				</ul>
 			</div>
 		</div>
@@ -114,7 +114,7 @@
 					contentType: false,
 					success: function(data){
 						self.loading = false;
-						self.alert(store,{
+						self.alert({
 							show: true,
 							msg: data.msg,
 							type: 'success'

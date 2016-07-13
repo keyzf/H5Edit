@@ -14,7 +14,7 @@ var pwd = __dirname;
 
 global.userPath = './User';
 global.dbHandel = require('./Server/db/dbHandel.js');
-global.db = mongoose.connect("mongodb://localhost:27017/goh5");
+global.db = mongoose.connect("mongodb://localhost:27017/h5edit");
 
 app.engine('html', consolidate.ejs);
 app.set('view engine', 'html');

@@ -74,6 +74,7 @@
 				},
 				listType: 1, // 0:默认 1:自己
 				listData: [],
+				host: location.host
 			};
 		},
 		created: function() {

@@ -109,7 +109,7 @@
 					contentType: false,
 					success: function(data){
 						self.loading = false;
-						self.alert(store,{
+						self.alert({
 							show: true,
 							msg: data.msg,
 							type: 'success'

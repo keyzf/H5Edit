@@ -130,7 +130,7 @@
 				<div class="attr_main" v-show="nav_top_btn == 1">
 					<ul class="group">
 						<li v-for="item in aniStyleAttr">
-							<div class="group_head" :class="{'active':group_index === 0}" @click="group_index == $index ? group_index = null : group_index = $index">
+							<div class="group_head" :class="{'active':group_index === $index}" @click="group_index == $index ? group_index = null : group_index = $index">
 								<h4>动画 {{$index + 1}}</h4>
 								<span class="caret" :class="{'caret_close':group_index !== $index}"></span>
 							</div>

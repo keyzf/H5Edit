@@ -107,11 +107,11 @@
 		font-size: 12px;
 		text-decoration: none;
 	}
-	.item li{
+	.head_con .item li{
 		display: inline-block;
 		vertical-align: top;
 	}
-	.item.left {
+	.head_con .item.left {
 		margin-left: 20px;
 		font-size: 22px;
 	}
